@@ -1,3 +1,4 @@
+package personnages;
 
 public class Gaulois 
 {
@@ -16,7 +17,7 @@ public class Gaulois
 	}
 	
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "\"" + texte + "\"");
+		System.out.print(prendreParole() + "\"" + texte + "\"");
 	}
 	
 	
@@ -37,10 +38,27 @@ public class Gaulois
 	
 
 
+	@Override
 	public String toString() {
-		return "Gaulois [nom=" + nom + "]";
+		return nom;
 	}
 	
+	
+	public static void main(String[] args) 
+	{
+		Gaulois asterix = new Gaulois("Astérix", 8);
+
+        
+        System.out.print(asterix);
+		
+	}
+	
+	
+	public void frapper() 
+	{
+		
+		
+	}
 	
 	
 

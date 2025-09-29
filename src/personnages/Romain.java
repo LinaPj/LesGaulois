@@ -1,3 +1,4 @@
+package personnages;
 
 public class Romain
 {
@@ -25,6 +26,22 @@ public class Romain
 		return "Le romain " + nom + " : ";
 		
 	}
+	
+	
+	public void recevoirCoup(int forceCoup) 
+	{
+		force -= forceCoup;
+	    if (force > 0) 
+	    {
+	    	System.out.println("Le Romain " + nom + " a encore " + force + " de force.");
+	     } else 
+	     {
+	     
+	    	 System.out.println("Le Romain " + nom + " est à terre !");
+	        }
+		
+	} 
+	
 
 	
 
