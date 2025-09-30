@@ -17,12 +17,14 @@ public class Romain
 	}
 
 
-	public void parler(String texte) {
+	public void parler(String texte) 
+	{
 		System.out.println(prendreParole() + "\"" + texte + "\"");
 		}
 
 
-	private String prendreParole() {
+	private String prendreParole() 
+	{
 		return "Le romain " + nom + " : ";
 		
 	}
