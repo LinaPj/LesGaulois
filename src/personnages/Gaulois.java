@@ -83,7 +83,7 @@ public class Gaulois
 	public void setVillage(Village village) {
 		this.village = village;
 	}
-	
+
 	
 	
 	
