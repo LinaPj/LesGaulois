@@ -2,8 +2,8 @@ package objets;
 
 public class Chaudron 
 {
-	int quantitePotion ;
-	int forcePotion;
+	private int quantitePotion ;
+	private int forcePotion;
 	
 	
 	public Chaudron(int quantitePotion, int forcePotion) 

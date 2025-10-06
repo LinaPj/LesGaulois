@@ -1,10 +1,14 @@
 package personnages;
 
+import objets.Village;
+
 public class Gaulois 
 {
 	private String nom;
 	private int force;
-	int effetPotion=1;
+	private int effetPotion=1;
+	private Village village;
+
 	
 	
 	
@@ -39,8 +43,6 @@ public class Gaulois
 
 	
 
-
-	@Override
 	public String toString() 
 	{
 		return nom;
@@ -69,9 +71,23 @@ public class Gaulois
 		
 	}
 	
-	public void boirePotion(int forcePotion) {
+	public void boirePotion(int forcePotion) 
+	{
 	    this.effetPotion = forcePotion;
 	}
+
+
+	
+
+
+	public void setVillage(Village village) {
+		this.village = village;
+	}
+	
+	
+	
+	
+	
 
 	
 	
