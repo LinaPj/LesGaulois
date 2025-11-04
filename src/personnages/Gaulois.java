@@ -1,5 +1,8 @@
 package personnages;
 
+import histoire.Musee;
+import histoire.Trophee ;
+
 import objets.Equipement;
 import objets.Village;
 
@@ -103,6 +106,23 @@ public class Gaulois
         Gaulois asterix = new Gaulois("Astérix", 8);
         System.out.println(asterix);
     }
+
+
+   
+    public void faireUneDonnation(Musee musee) {
+        if (nbTrophees > 0) {
+            parler("Je donne au musee");
+            for (int i = 0; i < nbTrophees; i++) {
+                Equipement equipement = trophees[i]; 
+                System.out.println("- " + equipement);
+                musee.donnerTrophees(this, equipement);
+            }
+            nbTrophees = 0;
+        } else {
+            parler("Pas de trophees");
+        }
+    }
+
 }
 
 	

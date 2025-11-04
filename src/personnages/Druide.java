@@ -19,6 +19,14 @@ public class Druide
 	}
 
 
+
+	public Druide(String nom, int force) {
+        this.nom = nom;
+        this.force = force;
+        this.chaudron = new Chaudron();
+        }
+
+
 	public String getNom() 
 	{
 		return nom;
@@ -62,4 +70,8 @@ public class Druide
 	}
 
 
+	 public void booster(Gaulois gaulois) {
+	        System.out.println("Le druide " + nom + " booste " + gaulois.getNom() + " !");
+	        
+	    }
 }

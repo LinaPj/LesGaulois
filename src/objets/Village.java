@@ -47,11 +47,12 @@ public class Village
 	{
 		
 		
-		for(int i=0; i< villageois.length; i++) 
-		{
-			if ()
-			
-		}
+		if (numVillageois >= 0 && numVillageois < nbVillageois) {
+	        return villageois[numVillageois];
+	    } else {
+	        System.out.println("Aucun villageois trouvé à cet indice !");
+	        return null;
+	    }
 		
 		
 	}

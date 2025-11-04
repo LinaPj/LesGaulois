@@ -12,6 +12,11 @@ public class Chaudron
 		this.forcePotion = forcePotion;
 	}
 	
+	public Chaudron() {
+	    this.quantitePotion = 0;
+	    this.forcePotion = 0;
+	}
+	
 	
 	
 	
